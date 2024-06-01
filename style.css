@@ -156,8 +156,8 @@ header .descargas span {
 /* Carrusel */
 .carrusel {
     position: relative;
-    max-width: 600px; /* Define el ancho máximo del carrusel */
-    max-height: 400px; /* Define la altura máxima del carrusel */
+    max-width: 300px; /* Define el ancho máximo del carrusel */
+    max-height: 200px; /* Define la altura máxima del carrusel */
     margin: auto;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo del carrusel */
@@ -175,8 +175,8 @@ header .descargas span {
 }
 
 .carrusel-item img {
-    width: 100%;
-    height: 100%; /* Hace que la imagen ocupe todo el contenedor del carrusel */
+    width: 70%;
+    height: 70%; /* Hace que la imagen ocupe todo el contenedor del carrusel */
     object-fit: cover; /* Hace que la imagen mantenga su proporción dentro del contenedor */
 }
 
