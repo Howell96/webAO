@@ -2,6 +2,7 @@
 html {
     background-color: black;
     color: white;
+    height: 100%;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("fondo.png");
     background-size: cover;
     background-position: center;
-    background-attachment: contain;
+    background-attachment: fixed; /* Cambiado a fixed para que el fondo no se mueva */
 }
 
 header {
@@ -21,13 +22,13 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("fondo-logo.png");
     background-size: cover;
     background-position: center;
-    background-attachment: contain;
+    background-attachment: fixed; /* Cambiado a fixed para que el fondo no se mueva */
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    padding: 20px 0; /* Añadido padding para asegurar que el contenido no esté pegado al borde */
 }
 
 header .logo {
@@ -156,9 +157,9 @@ header .descargas span {
 /* Carrusel */
 .carrusel {
     position: relative;
-    max-width: 300px; /* Define el ancho máximo del carrusel */
-    max-height: 200px; /* Define la altura máxima del carrusel */
-    margin: auto;
+    max-width: 600px; /* Define el ancho máximo del carrusel */
+    max-height: 400px; /* Define la altura máxima del carrusel */
+    margin: 40px auto; /* Asegura que el carrusel esté centrado y separado del contenido superior */
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo del carrusel */
     border-radius: 10px; /* Bordes redondeados */
@@ -175,8 +176,8 @@ header .descargas span {
 }
 
 .carrusel-item img {
-    width: 70%;
-    height: 70%; /* Hace que la imagen ocupe todo el contenedor del carrusel */
+    width: 100%;
+    height: 100%; /* Hace que la imagen ocupe todo el contenedor del carrusel */
     object-fit: cover; /* Hace que la imagen mantenga su proporción dentro del contenedor */
 }
 
